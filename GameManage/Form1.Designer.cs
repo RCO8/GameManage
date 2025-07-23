@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// 필수 디자이너 변수입니다.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 사용 중인 모든 리소스를 정리합니다.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,117 +20,95 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form 디자이너에서 생성한 코드
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.Title = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Platform = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ReleaseDate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.PlatformFilter = new System.Windows.Forms.CheckedListBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip1.SuspendLayout();
+            this.titleData = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("돋움", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(46, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 24);
+            this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "GameManage";
+            this.label1.Text = "Title";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // listView1
+            // titleData
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Title,
-            this.Platform,
-            this.ReleaseDate});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 52);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(408, 335);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.titleData.Location = new System.Drawing.Point(99, 12);
+            this.titleData.Name = "titleData";
+            this.titleData.Size = new System.Drawing.Size(130, 21);
+            this.titleData.TabIndex = 1;
+            this.titleData.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Title
+            // label2
             // 
-            this.Title.Text = "Title";
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(12, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Platform";
             // 
-            // Platform
+            // comboBox1
             // 
-            this.Platform.Text = "Platform";
-            this.Platform.Width = 122;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(99, 45);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(130, 20);
+            this.comboBox1.TabIndex = 3;
             // 
-            // ReleaseDate
+            // label3
             // 
-            this.ReleaseDate.Text = "ReleaseDate";
-            this.ReleaseDate.Width = 96;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(43, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Year";
             // 
-            // button1
+            // domainUpDown1
             // 
-            this.button1.Location = new System.Drawing.Point(427, 52);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Insert Data";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.InsertData);
-            // 
-            // PlatformFilter
-            // 
-            this.PlatformFilter.FormattingEnabled = true;
-            this.PlatformFilter.Location = new System.Drawing.Point(427, 82);
-            this.PlatformFilter.Name = "PlatformFilter";
-            this.PlatformFilter.Size = new System.Drawing.Size(120, 84);
-            this.PlatformFilter.TabIndex = 3;
-            this.PlatformFilter.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 4;
-            this.statusStrip1.Text = "GameManage";
-            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(81, 17);
-            this.toolStripStatusLabel1.Text = "GameManage";
+            this.domainUpDown1.Location = new System.Drawing.Point(99, 81);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.Size = new System.Drawing.Size(120, 21);
+            this.domainUpDown1.TabIndex = 5;
+            this.domainUpDown1.Text = "domainUpDown1";
+            this.domainUpDown1.SelectedItemChanged += new System.EventHandler(this.domainUpDown1_SelectedItemChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.PlatformFilter);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(246, 450);
+            this.Controls.Add(this.domainUpDown1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.titleData);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "GameManage";
+            this.Text = "Insert Data";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,14 +117,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ColumnHeader Title;
-        private System.Windows.Forms.ColumnHeader Platform;
-        private System.Windows.Forms.ColumnHeader ReleaseDate;
-        private System.Windows.Forms.CheckedListBox PlatformFilter;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.TextBox titleData;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }
-

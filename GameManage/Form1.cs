@@ -15,40 +15,24 @@ namespace GameManage
         public Form1()
         {
             InitializeComponent();
-
-            PlatformFilter.Items.Add("PC", true);
-            PlatformFilter.Items.Add("Web Browser");
-            PlatformFilter.Items.Add("Nintendo Switch", true);
-            PlatformFilter.Items.Add("Play Station 5", true);
-            PlatformFilter.Items.Add("Android");
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void InsertData(object sender, EventArgs e)
-        {
-            Console.WriteLine("데이터 추가로 새로운 폼 생성");
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("색깔변경 주기적으로");
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
 
         }
