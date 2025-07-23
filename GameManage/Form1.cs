@@ -36,5 +36,16 @@ namespace GameManage
         {
 
         }
+
+        private void ApplyInsert(object sender, EventArgs e)
+        {
+            //INSERT 버튼 누를 때
+            //titleData.Text
+        }
+
+        private void CancelInsert(object sender, EventArgs e)
+        {
+
+        }
     }
 }
